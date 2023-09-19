@@ -150,7 +150,7 @@
         }
         else{
             $hash = password_hash($password, PASSWORD_DEFAULT);
-            $sql = "INSERT INTO users (username, name, surname, email, password, gender, dob) VALUES ('$username', '$name', '$surname', '$email', '$hash', '$gender', '$dob')";
+            $sql = "INSERT INTO users2 (username, name, surname, email, password, gender, dob) VALUES ('$username', '$name', '$surname', '$email', '$hash', '$gender', '$dob')";
             try{
                 mysqli_query($connection, $sql);
                 // ob_start();
